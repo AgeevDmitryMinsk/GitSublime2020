@@ -16,11 +16,27 @@ console.log(phrases[4]);  //  выведите 5й элемент массива
 															//Чтобы её получить, нужно после имени массива поставить точку и написать length
 															//	т.е.:    phrases.length в данном случае = 6.
 
-function getRandomElement() { //Сделайте так, чтобы код, выбирающий случайный элемент массива, стал функцией. 
+//function getRandomElement() { //Сделайте так, чтобы код, выбирающий случайный элемент массива, стал функцией. 
 							  //Для этого создайте (объявите) функцию getRandomElement
-	let randIndex = Math.floor(Math.random() * phrases.length);
-	console.log(randIndex); // выводит в консоль случайное число
-	console.log(phrases[randIndex]); // выводит в консоль текст из массива соответствующий случайному  числу
-}
+//	let randIndex = Math.floor(Math.random() * phrases.length);
+//	console.log(randIndex); // выводит в консоль случайное число
+//	console.log(phrases[randIndex]); // выводит в консоль текст из массива соответствующий случайному  числу}
+// getRandomElement(); // вызов фунции getRandomElement(), в данном случае в консоль 
 
-getRandomElement(); // вызов фунции getRandomElement(), в данном случае в консоль 
+//function getRandomElement(arr) { //Сделайте так, чтобы функция getRandomElement принимала на вход массив. Дайте ему имя arr и используйте его
+								 // в теле функции вместо phrases. При вызове функции getRandomElement передайте переменную phrases как аргумент.
+//  let randIndex = Math.floor(Math.random() * arr.length);
+//  console.log(randIndex);
+//  console.log(phrases[randIndex]);}
+// getRandomElement(phrases); // При вызове функции getRandomElement передайте переменную phrases как аргумент.
+
+function getRandomElement(arr) { //Сделайте так, чтобы функция getRandomElement принимала на вход массив. Дайте ему имя arr и используйте его
+								 // в теле функции вместо phrases. При вызове функции getRandomElement передайте переменную phrases как аргумент.
+  let randIndex = Math.floor(Math.random() * arr.length);
+  return arr[randIndex];} // Чтобы вернуть значение из функции, уберите из кода выводы в консоль и используйте return
+  						  // Нужно чтобы функция возвращала результат, а не выводила его в консоль. Тогда результат можно будет сохранить в переменную
+  
+getRandomElement(phrases); // При вызове функции getRandomElement передайте переменную phrases как аргумент.
+let randomElement = getRandomElement(phrases); // Чтобы не потерять результат выполнения функции, создайте переменную randomElement. 
+			//Затем вызовите функцию getRandomElement с массивом phrases в качестве аргумента — так, чтобы результат выполнения «вернулся» в переменную.
+console.log(randomElement); // Проверьте, что в переменную попало то, что нужно — выведите её содержимое в консоль.
