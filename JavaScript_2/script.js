@@ -40,3 +40,6 @@ getRandomElement(phrases); // При вызове функции getRandomElemen
 let randomElement = getRandomElement(phrases); // Чтобы не потерять результат выполнения функции, создайте переменную randomElement. 
 			//Затем вызовите функцию getRandomElement с массивом phrases в качестве аргумента — так, чтобы результат выполнения «вернулся» в переменную.
 console.log(randomElement); // Проверьте, что в переменную попало то, что нужно — выведите её содержимое в консоль.
+
+	// для сохранения в GitHub нужно обязательно сначала сохранить проект на винчестере, затем нажать ctrl + shift + P. 
+	// Затем набраьть "stage", выбрать "git:quick stage", затем снова ctrl + shift + P и набрать push. ВСЁ !!!
