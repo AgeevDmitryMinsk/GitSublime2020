@@ -1,0 +1,51 @@
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: 'William', serif;
+  margin-top:  0px;
+  margin-bottom: 0px;
+  padding-top: 34px; /*отступим от границы элемента h1 внутрь. Для элемента h1 обнулим margin-top и назначиме padding-top со значением 34px.*/
+  color: white; /*текст на обложке должен стать белым.*/
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0px; /*Сократили до минимума расстояние между заголовками h1 и h2. Обнулите нижний отступ для h1 и верхний для h2*/
+  margin-bottom: 24px; /*Задали элементу h2 предсказуемое поведение: установите для h2 нижний внешний отступ margin-bottom размером 24px.*/
+  color: white; /*текст на обложке должен стать белым.*/ 
+}
+
+h3 
+{font-family: 'William', serif;
+margin: 0;
+font-size: 15px;
+text-transform: uppercase;
+line-height: 18px;
+font-weight: normal; /*Сделали  заголовок h3 «нормальным» по толщине*/
+color: white; /*текст на обложке должен стать белым.*/ 
+}
+
+
+img {
+  width: 230px;
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+div {
+  background-color: mediumaquamarine;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  /*background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); /* можно свободно поменять фоновый цвет для элемента div.
+  																		 поставьте на фон градиент. https://webgradients.com/*/
+  /*background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);*/
+  width:500;
+  height:500;
+  text-align: center; /*разместить название и картинку по центру обложки*/
+  margin: auto; /*Это незнакомое заклинание поместит div по центру по горизонтали.  Так как div — не текст, то text-align здесь не сработает. */
+}
