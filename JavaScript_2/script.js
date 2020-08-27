@@ -22,3 +22,5 @@ function getRandomElement() { //Сделайте так, чтобы код, вы
 	console.log(randIndex); // выводит в консоль случайное число
 	console.log(phrases[randIndex]); // выводит в консоль текст из массива соответствующий случайному  числу
 }
+
+getRandomElement(); // вызов фунции getRandomElement(), в данном случае в консоль 
