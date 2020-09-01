@@ -92,3 +92,11 @@ button.addEventListener('click', function () {
 
   else {advice.style.fontSize = '42px'}  //  оставим шрифт 42px  если длина текста < 40 букв.
 });
+
+for (let i = 0; i <= 2; i = i + 1) {  //Начнём с малого: напишите цикл for, который будет выводить в консоль первые три элемента массива phrases. 
+	//				Этот код должен срабатывать не по нажатию на кнопку, а при загрузке страницы, поэтому пишите его в самом конце файла script.js.
+  console.log(phrases[i]);
+  smoothly(phrase, 'textContent', phrases[i].text) // В теле цикла команду console.log замените командой smoothly. 
+  													//Причём эта команда должна сохранять в переменной phrase элемент массива с индексом i.
+  smoothly(image, 'src', phrases[i].image); // Добавьте внутрь цикла второй вызов smoothly. На этот раз для плавной смены картинок.
+}
