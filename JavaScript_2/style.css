@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-  display: flex;
+  /*display: flex;*/
   align-items: baseline;
   justify-content: space-between;
 }
