@@ -1,0 +1,40 @@
+.row {
+ display: grid;
+ margin: auto;
+ grid-template-rows: 60px 1fr ;
+ grid-template-columns: 20% 1fr 15%;
+ grid-gap: 10px;
+ width: 1000px;
+ height: 1000px;
+ background-color: #e3f3ff;
+ 
+ justify-items: center;
+ justify-content: space-between;
+ grid-template-areas:
+ "ads header header"
+ "ads article nav";
+ }
+
+.header{
+grid-area: header;
+box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+}
+.nav{
+grid-area: nav;
+box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+}
+.article{
+grid-area: article;
+box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+}
+.ads{
+grid-area: ads;
+box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+}
+/*
+grid-template-areas: {
+ "nav header header"
+ "nav article ads"; 
+}
+*/
+/*css.grid*/
