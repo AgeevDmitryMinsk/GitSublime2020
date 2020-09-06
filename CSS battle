@@ -1,0 +1,23 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #62374e;
+    display: flex;
+    justify-content: space-between;
+    padding: 42px;
+  }
+ div {
+    width: 50px;
+      }
+  div:before,
+  div:after{
+    content: "";
+    background: #fdc57b;
+    width: 50px;
+    height: 50px;
+    display: block;
+    }
+  div:before{
+    margin-bottom: 100px}
+</style>
