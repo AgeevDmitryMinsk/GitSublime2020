@@ -122,3 +122,4 @@ sans-serif. Оно задаст всей странице шрифт Helvetica. 
   text-align: center; /*центрируем текст по центру по горизонтали*/
   margin: auto; /* margin: auto после display: flex; разместит текст по центру обоих осей родительского элемента.*/
 }
+/* CSSO: https://css.github.io/csso/csso.html - для минимизации CSS - кода */ 
